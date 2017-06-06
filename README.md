@@ -194,7 +194,7 @@ are rehashed.
 
 ### Compiler warnings
 
-Arduino's position on compiler warnings has chanced somewhat over the
+Arduino's position on compiler warnings has changed somewhat over the
 years.  Historically, all warnings were suppressed.  Modern Arduino has
 options to enable warnings in File > Preferences.  The default is still
 no warnings.
