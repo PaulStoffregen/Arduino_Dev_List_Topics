@@ -5,8 +5,11 @@ As of June 2017.....
 
 TODO: much detail description to fill in, so little time!
 
-Desired Features
-----------------
+Device Feature Requests
+-----------------------
+
+These requests seem to have general agreement, but many differing opinions
+on the finer details.
 
 ### HardwareSerial (and Wire) buffer size config
 
@@ -54,6 +57,9 @@ feature on the requested pin.
 Performance Issues
 ------------------
 
+Many times the need for better performance in various Arduino APIs and
+libraries has been discussed.
+
 ### Wire.endTransmission() & Wire.requestFrom() blocking
 
 ### analogRead blocking
@@ -64,21 +70,33 @@ ChipKit implementation: see 03/22/2017 10:35 PM
 
 ### Ethernet library
 
-### Lack of interrupt-base serial transmit on some boards
+### Lack of interrupt-based serial transmit on some boards
+
+Most boards have this, but some don't.
 
 ### SPI.transfer(buf, count) blocking
 
 ### serialEvent and events/callbacks in general
 
+This is a large topic, but in a nutshell event function calls can be done
+from interrupt context, from yield (if called from blocking code), or when
+idle (after loop returns).  If an RTOS is used, thread affinity is also a
+design concern.  Explicit attach functions versus weak symbol binding is
+an API-level design choice to make.  Consensus seems impossible...
 
 
 
-IDE Requests
-------------
+IDE Feature Requests
+--------------------
+
+These are the most commonly requested IDE improvements.
 
 ### hardware breakpoint debug
 
 ### autocomplete
+
+Probably similar to Microsoft IntelliSense, maybe?  Some patches and
+progress have been made.
 
 ### serial monitor - VT100, ANSI, other terminal emulation
 
@@ -87,6 +105,12 @@ IDE Requests
 
 Frequently Rejected Proposals & Ongoing Controversy
 ---------------------------------------------------
+
+The Arduino Team has made firm decisions on these topics, but many people
+strongly disagree with those choices.  Time and time again these topics
+are rehashed.
+
+![](nostairway.jpg)
 
 ### Compiler warnings
 
@@ -102,7 +126,7 @@ Frequently Rejected Proposals & Ongoing Controversy
 
 ### Standards Compliance
 
-### RTOS (The Only True Way)
+### Preemptive RTOS (The Only True Way)
 
 ### Java & IDE Memory Usage
 
