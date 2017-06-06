@@ -3,7 +3,7 @@ Arduino Developers List: Frequently Discussed Topics
 
 As of June 2017.....
 
-Disclaimer: Many of these desciptions probably incorporate my own bias
+Disclaimer: Many of these descriptions probably incorporate my own bias
 or even skarky cynicism in some cases.  Archives of all conversations
 can be found online.
 
@@ -195,7 +195,7 @@ are rehashed.
 ### Compiler warnings
 
 Arduino's position on compiler warnings has chanced somewhat over the
-years.  Historically, all warnings were surpressed.  Modern Arduino has
+years.  Historically, all warnings were suppressed.  Modern Arduino has
 options to enable warnings in File > Preferences.  The default is still
 no warnings.
 
@@ -209,7 +209,7 @@ a stumbling block to getting started.
 Many developers are unhappy about the number of warnings present in
 the core libraries for various boards, and in many widely used libraries.
 Various proposals have been made to try exposing library authors to
-compiler warning for thier code, without exposing novice users, but
+compiler warning for their code, without exposing novice users, but
 even those ideas are controversial (eg, don't second guess the compiler
 or user settings).
 
@@ -257,7 +257,7 @@ in any embedded system.  Issues with memory fragmentation and
 non-deterministic performance are real concerns.
 
 Arduino's String class has tremendous usability benefits for novice
-users.  The matter was decided in vesion 0019 (August 2010) with
+users.  The matter was decided in version 0019 (August 2010) with
 much controversy.  Even now, ther seems to be lingering resentment
 or disagreement with any API using heap memory.  This sentiment comes
 up over and over again...
@@ -298,7 +298,7 @@ blasphemy.
 
 ### Preemptive RTOS (The Only True Way)
 
-Many conversations even slighly related to concurrency become
+Many conversations even slightly related to concurrency become
 dominated by people who believe very strongly that RTOS systems
 with preemptive scheduling are the only valid solution.  Productive
 discussion is extremely difficult and consensus seems impossible.
