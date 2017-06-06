@@ -3,7 +3,17 @@ Arduino Developers List: Frequently Discussed Topics
 
 As of June 2017.....
 
-TODO: much detail description to fill in, so little time!
+Disclaimer: Many of these desciptions probably incorporate my own bias
+or even skarky cynicism in some cases.  Archives of all conversations
+can be found online.
+
+While reviewing the last 5 years of messages, many topics did not make
+this list because they were resolved.  The SPI library did get transactions
+and hardware independent settings.  Arduino did incorporate feedback in
+the design of their library manager, especially to give library authors
+control over releasing updates.  Hundreds of issues have been resolved.
+
+This list is primarily the unresolved topics discussed.
 
 Device Feature Requests
 -----------------------
