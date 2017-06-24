@@ -28,7 +28,7 @@ from increasing these buffer sizes.  The open source code can be edited, but
 sketches depending on edited core library code aren't easily shared.  The
 desire is to increase these buffer sizes from Arduino sketch code.
 
-Consensus seems to have formed around (Martino Facchin's RingBuffer addMemory](https://github.com/facchinm/ArduinoCore-samd/commits/RingBuffer_extra_rebased)
+Consensus seems to have formed around [Martino Facchin's RingBuffer addMemory](https://github.com/facchinm/ArduinoCore-samd/commits/RingBuffer_extra_rebased)
 proposal.  The public API is still very much debated, but some consensus seems
 to involve overloading Serial.begin.  Type/class names and syntax for buffers
 are uncertain.  Some concerns about publishing internal core lib structures
